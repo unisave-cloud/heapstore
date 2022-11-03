@@ -6,11 +6,13 @@
 /[Pp]ackages/
 
 # Unisave
-/[Aa]ssets/Unisave*
+/[Aa]ssets/Unisave/
+/[Aa]ssets/Unisave.meta
 
-# Rider
+# Editors
 .idea/
 *.csproj.DotSettings
+.vscode/
 
 
 ############################################

@@ -17,3 +17,26 @@ Heapstore is an official Unisave asset that provides a cloud database, similar t
 2. Open in Unity
 3. Install the core Unisave Asset via the Asset Store
 4. There should be no errors now
+
+
+### Features to implement
+
+- imperative API
+    - document API
+        - get (KEY known, fetches the document or signals it is missing)
+        - set (KEY known, create or overwrite entire document)
+        - update (KEY known, create or merge)
+        - add (KEY to be created, create document)
+    - query API
+        - return documents based on a query
+- declarative API
+    - watch a query and report modifications
+- latency compensation
+    - document modifications should update watching queries on the same client immediately
+- real-time updates
+    - document modifications should ping watching queries via the broadcasting system
+- security
+    - authentication
+    - security rules
+- quality of service
+    - handle network outages
